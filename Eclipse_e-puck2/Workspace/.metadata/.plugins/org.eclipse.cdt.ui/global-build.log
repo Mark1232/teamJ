@@ -596,3 +596,551 @@ make all
 17:20:35 **** Incremental Build of configuration Default for project epuck_project ****
 make all 
 make: Nothing to be done for 'all'.
+15:18:39 **** Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mCompiling cmd.c[0m
+[1;34mCompiling Asercom.c[0m
+[1;34mCompiling Asercom2.c[0m
+[1;34mCompiling ir_remote.c[0m
+[1;34mCompiling battery_level.c[0m
+[1;34mCompiling ground.c[0m
+[1;34mCompiling imu.c[0m
+[1;34mCompiling proximity.c[0m
+[1;34mCompiling communication.c[0m
+[1;34mCompiling ircom.c[0m
+[1;34mCompiling skel_user.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  68596	   3028	  17516	  89140	  15c34	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:21:47 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:23:10 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:02 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:18 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:26:29 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:27:41 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:28:54 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:49 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:39:06 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67380	   3028	  17532	  87940	  15784	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:41:55 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67380	   3028	  17532	  87940	  15784	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:42:12 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:42:37 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:42:41 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:45:57 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67380	   3028	  17532	  87940	  15784	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:46:02 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:08 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:54:29 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:11: warning: implicit declaration of function 'time'; did you mean 'pipe'? [-Wimplicit-function-declaration]
+     srand(time(NULL));
+           ^~~~
+           pipe
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard/libg.a(lib_a-gettimeofdayr.o): In function `_gettimeofday_r':
+gettimeofdayr.c:(.text._gettimeofday_r+0x10): undefined reference to `_gettimeofday'
+collect2: error: ld returned 1 exit status
+../e-puck2_main-processor/ChibiOS//os/common/ports/ARMCMx/compilers/GCC/rules.mk:243: recipe for target 'build/Project_template.elf' failed
+make: *** [build/Project_template.elf] Error 1
+15:55:11 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67492	   3028	  17532	  88052	  157f4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+15:56:13 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+15:58:43 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67508	   3028	  17532	  88068	  15804	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:00:32 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:00:41 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:00:44 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:00:50 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:01:37 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:04:21 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67460	   3028	  17532	  88020	  157d4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:04:33 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:14 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67476	   3028	  17532	  88036	  157e4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:06:37 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:41 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:06:45 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:14:44 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:41:9: warning: unused variable 'r' [-Wunused-variable]
+     int r = rand();
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67524	   3028	  17532	  88084	  15814	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:15:24 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:28 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:32 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:39 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67492	   3028	  17532	  88052	  157f4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:17:48 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:10 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67412	   3028	  17532	  87972	  157a4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:20:25 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:28 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:32 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:20:35 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:01 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:12: warning: unused variable 'dir' [-Wunused-variable]
+     int r, dir = 1;
+            ^~~
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67428	   3028	  17532	  87988	  157b4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:24:18 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:22 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:26 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:30 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:54 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:12: warning: unused variable 'dir' [-Wunused-variable]
+     int r, dir = 1;
+            ^~~
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67444	   3028	  17532	  88004	  157c4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:26:04 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:08 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:11 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:15 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:26:18 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:28 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:12: warning: unused variable 'dir' [-Wunused-variable]
+     int r, dir = 1;
+            ^~~
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67428	   3028	  17532	  87988	  157b4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:28:32 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:36 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:40 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:43 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:02 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:12: warning: unused variable 'dir' [-Wunused-variable]
+     int r, dir = 1;
+            ^~~
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67444	   3028	  17532	  88004	  157c4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:32:16 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:20 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:24 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:28 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:32:31 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:33:43 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+[1;34mCompiling main.c[0m
+main.c:19:0: warning: "RAND_MAX" redefined
+ #define RAND_MAX 500
+ 
+In file included from main.c:2:0:
+/home/uos/Documents/teamJ/Eclipse_e-puck2/Tools/gcc-arm-none-eabi-7-2017-q4-major/arm-none-eabi/include/stdlib.h:63:0: note: this is the location of the previous definition
+ #define RAND_MAX __RAND_MAX
+ 
+main.c: In function 'main':
+main.c:40:12: warning: unused variable 'dir' [-Wunused-variable]
+     int r, dir = 1;
+            ^~~
+main.c:40:9: warning: unused variable 'r' [-Wunused-variable]
+     int r, dir = 1;
+         ^
+[1;34mLinking build/Project_template.elf[0m
+[1;34mCreating build/Project_template.hex[0m
+[1;34mCreating build/Project_template.bin[0m
+[1;34mCreating build/Project_template.dmp[0m
+
+   text	   data	    bss	    dec	    hex	filename
+  67412	   3028	  17532	  87972	  157a4	build/Project_template.elf
+[1;34mCreating build/Project_template.list[0m
+
+[1;34mDone[0m
+16:34:05 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:09 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:16 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:19 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.
+16:34:22 **** Incremental Build of configuration Default for project epuck_project ****
+make all 
+make: Nothing to be done for 'all'.

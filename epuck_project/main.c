@@ -15,6 +15,9 @@
 #include "chprintf.h"
 #include "usbcfg.h"
 
+
+#define RAND_MAX 500
+
 messagebus_t bus;
 MUTEX_DECL(bus_lock);
 CONDVAR_DECL(bus_condvar);
@@ -22,7 +25,6 @@ CONDVAR_DECL(bus_condvar);
 int main(void)
 {
 	int prox_values[8];
-
 
     halInit();
     chSysInit();
@@ -35,6 +37,7 @@ int main(void)
     spi_comm_start();
     calibrate_ir();
 
+    int r, dir = 1;
 
     /* Infinite loop. */
     while (1) {
@@ -42,19 +45,24 @@ int main(void)
     		prox_values[i] = get_prox(i);
     	}
 
-    	if (SDU1.config->usbp->state==USB_ACTIVE) {
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[0]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[1]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[2]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[3]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[4]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[5]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[6]);
-    		chprintf((BaseSequentialStream*)&SDU1, "%4d\n", prox_values[7]);
+    	if (prox_values[0] > 150 || prox_values[7] > 150) {
+
+    		if (prox_values[0] < prox_values[7]){
+    		left_motor_set_speed(500);
+    		right_motor_set_speed(-600);
+    		}
+
+    		if (prox_values[0] > prox_values[7]){
+    		left_motor_set_speed(-500);
+    		right_motor_set_speed(600);
+    		}
+
+    		chThdSleepMilliseconds(500);
     	}
-
-    	chThdSleepMilliseconds(50);
-
+    	else {
+    		left_motor_set_speed(600);
+    		right_motor_set_speed(600);
+    	}
     }
 }
 
